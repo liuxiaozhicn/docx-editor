@@ -1,5 +1,16 @@
 # @eigenpal/docx-editor-vue
 
+## 1.3.4
+
+### Patch Changes
+
+- 3d36236: Fix Vue `getDocument()` returning paragraphs without their `paraId`s until the first edit. The host Document cache is now synced with the ids assigned at load (#738), so `getDocument()` exposes them immediately. Fixes #746.
+- 92690d6: Fix the Vue formatting toolbar not applying to a header or footer while editing it. Bold, italic, font, size, color, paragraph style, and clear-formatting now target the header/footer being edited instead of the document body. Fixes #749.
+- Updated dependencies [28a521a]
+  - @eigenpal/docx-editor-core@1.3.4
+  - @eigenpal/docx-editor-agents@1.3.4
+  - @eigenpal/docx-editor-i18n@1.3.4
+
 ## 1.3.3
 
 ### Patch Changes
